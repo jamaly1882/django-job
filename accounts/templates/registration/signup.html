@@ -1,0 +1,17 @@
+{% extends  'store/main.html' %}
+
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+  
+  <form method="post">
+    {% csrf_token %}
+    {%  bootstrap_form form %}
+  
+    <input type="submit" value="signup"class="boxed-btn3 w-100" />
+   
+  </form>
+
+  
+{% endblock %}

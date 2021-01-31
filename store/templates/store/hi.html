@@ -1,0 +1,25 @@
+  
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+  
+<table border="2"> <tr><td>id</a></td><td>customer</td><td>qu</td></tr>
+	<tr>
+	{% for ord in orderItem %}
+
+		
+				<td><a href="#">{{ord.product.id}}</a></td><td> {{ord.product.name}}</td><td> {{ord.quantity}}</td><</tr>
+				
+			
+
+			
+				
+			
+		{% endfor %}
+		
+		</table>
+		
+
+
+{% endblock content %}

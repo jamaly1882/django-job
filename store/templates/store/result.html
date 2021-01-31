@@ -1,0 +1,25 @@
+  
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+  
+<table border="2"> <tr><td>id</a></td><td>customer</td></tr>
+	<tr>
+	{% for ord in order %}
+
+		
+				<td><a href="#">{{ord.transaction_id}}</a></td><td> {{ord.customer}}</td></tr>
+				
+			
+
+			
+				
+			
+		{% endfor %}
+		
+		</table>
+		
+
+
+{% endblock content %}

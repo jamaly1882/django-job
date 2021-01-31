@@ -1,0 +1,26 @@
+{% extends  'store/main.html' %}
+
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+<div class="container">
+<input type="submit" value="profile"class="boxed-btn3 w-100" />
+ <div class="row">
+
+ <div class="col-lg-4">
+
+  <form method="post" >
+    {% csrf_token %}
+    {%  bootstrap_form userform %}
+    {%  bootstrap_form profileform %}
+  
+    <input type="submit" value="upd"class="boxed-btn3 w-100" />
+    
+  </form>
+
+
+
+</div>
+</div>
+
+{% endblock  %}
